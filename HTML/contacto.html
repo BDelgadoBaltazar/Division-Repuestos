@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - División Repuestos</title>
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/contacto.css">
+</head>
+<body>
+    <div class="logo">
+        <h1>División Repuestos</h1>
+        <img src="../Logo.png" alt="Logo División Repuestos" class="logo-img">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Consigna 2: Crear formulario de contacto -->
+        <section class="contenido-formulario">
+            <h2>Contáctanos</h2>
+            <form id="formulario-contacto">
+                <div class="formulario-campos">
+                    <!-- Campo 1 - Texto -->
+                    <label for="nombre">Nombre completo: </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="formulario-campos">
+                    <!-- Campo 2: Select -->
+                    <label for="repuesto">Tipo de repuesto:</label>
+                    <select id="repuesto" name="repuesto" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="motor">Motor</option>
+                        <option value="frenos">Frenos</option>
+                        <option value="suspension">Suspensión</option>
+                    </select>
+                </div>
+
+                <div class="formulario-campos">
+                    <!-- Campo 3: Radiobutton -->
+                    <p>Urgencia del pedido:</p>
+                    <input type="radio" id="alta" name="urgencia" value="alta" required> Alta
+                    <input type="radio" id="baja" name="urgencia" value="baja"> Baja
+                </div>
+
+                <div class="formulario-campos">
+                    <!-- Campo 4: Imagen (file) -->
+                    <label for="foto">Imagen del repuesto buscado:</label>
+                    <input type="file" id="foto" name="foto" accept="image/" required>
+                </div>
+
+                <div class="formulario-campos">
+                    <!-- Campo 5: Checkbox -->
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los terminos y condiciones</label>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar consulta</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="../JS/main.js"></script>
+</body>
+</html>

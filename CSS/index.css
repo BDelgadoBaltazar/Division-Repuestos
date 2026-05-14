@@ -1,0 +1,22 @@
+/* Estilos especificos del inicio */
+#hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../inicio.png);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); };
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out;
+}

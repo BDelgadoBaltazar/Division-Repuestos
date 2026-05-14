@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - División Repuestos</title>
+    <!-- Estilos base -->
+    <link rel="stylesheet" href="../CSS/base.css">
+    <!-- Estilos de esta pagina -->
+    <link rel="stylesheet" href="../CSS/catalogo.css">
+    <!-- Consigna 7: Uso de favicon -->
+    <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+<body>
+    <div class="grid-contenido">
+        <header>
+            <div class="logo">
+                <h1>División Repuestos</h1>
+                <img src="../Logo.png" alt="Logo División Repuestos" class="logo-img">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="catalogo.html">Catalogo</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="seccion-productos">
+                <h2>Nuestro catálogo de repuestos</h2>
+                <div id="contenido-productos" class="grid-productos">
+                    <!-- Los productos se van a cargar aca desde la API -->
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 División Repuestos. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="../JS/main.js"></script>
+</body>
+</html>
